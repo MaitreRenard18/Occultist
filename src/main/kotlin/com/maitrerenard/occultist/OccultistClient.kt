@@ -10,7 +10,7 @@ import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry
 
 object OccultistClient : ClientModInitializer {
     override fun onInitializeClient() {
-        EntityModelLayerRegistry.registerModelLayer(GraftenModel.GRAFTEN, GraftenModel<GraftenEntity>::getTexturedModelData)
+        EntityModelLayerRegistry.registerModelLayer(GraftenModel.GRAFTEN, { GraftenModel.texturedModelData })
         EntityRendererRegistry.register(ModEntities.GRAFTEN, ::GraftenRenderer)
     }
 }
