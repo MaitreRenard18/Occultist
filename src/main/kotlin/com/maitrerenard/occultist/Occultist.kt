@@ -13,14 +13,12 @@ import net.minecraft.item.Item
 import net.minecraft.registry.Registries
 import net.minecraft.registry.Registry
 import net.minecraft.util.Identifier
-import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 
 object Occultist : ModInitializer {
 	const val MOD_ID: String = "occultist"
     val logger: Logger = LoggerFactory.getLogger(MOD_ID)
     val LOGGER: Logger = LoggerFactory.getLogger("occultist")
-	const val MOD_ID: String = "occultist"
 
 	private val block = Block(AbstractBlock.Settings.create().strength(4.0f))
 	val blockItem = BlockItem(block, Item.Settings())
