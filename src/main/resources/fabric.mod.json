@@ -26,6 +26,12 @@
 				"value": "com.maitrerenard.occultist.OccultistDataGenerator",
 				"adapter": "kotlin"
 			}
+		],
+		"client": [
+			{
+				"value": "com.maitrerenard.occultist.OccultistClient",
+				"adapter": "kotlin"
+			}
 		]
 	},
 	"mixins": [
